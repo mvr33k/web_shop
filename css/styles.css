@@ -1,0 +1,152 @@
+/* Resetowanie domyślnych stylów dla przeglądarek */
+body, h1, h2, h3, p, ul, li, form, input, textarea, table {
+    margin: 0;
+    padding: 0;
+}
+
+/* Podstawowy styl strony */
+body {
+    font-family: Arial, sans-serif;
+    height: 100%;
+    width: 100%;
+}
+/*rozszerzenie inputu do szerokości strony */
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    /* margin: 8px 0; */
+    box-sizing: border-box;
+}
+
+textarea[name=opis] {
+    width: 100%;
+    padding: 12px 20px;
+    /* margin: 8px 0; */
+    box-sizing: border-box;
+}
+
+
+select[name=wybor] {
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+}
+
+/* Nagłówek i menu nawigacyjne */
+header {
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top:1%;
+    background-color: #bdbbbb;
+    color: #bdbbbb;
+    float: center;
+    width: 94%;
+    height: 7vh;
+    position: fixed;
+}
+
+nav{
+    height:100%;
+    width:100%;
+}
+
+nav ul {
+    width: 100%;
+    height:100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* float: left; */
+  }
+
+nav ul li {
+    display: inline-block;
+    position: relative;
+    height: 100%;
+    
+}
+nav ul li:first-child{
+    padding-right: %;
+}
+nav ul li:nth-child(n-2){
+    padding-right:5%;
+}
+nav ul li:last-child{
+    float: right;
+}
+
+/* nav ul li:hover ul {
+    display: block;
+} */
+
+nav ul li img{
+    float: left;
+    display: block;
+    height:100%;
+}
+
+/*  sprrobuj zrobic padding vh i vw w boxach. */
+nav ul li a{
+    margin: auto;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    /* padding-left: 16px; */
+    /* padding-right: 16px; */
+    padding: 16px;
+    text-decoration: none;  
+    height:80%;  
+    width:80%;
+}
+
+
+/* Dwie kolumny na treść */
+section {
+    width: 100%;
+    height:80%;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+
+}
+
+article {
+    flex: 1;
+    /* margin: 10px; */
+    /* padding: 10px; */
+    border: 1px solid #ccc;
+    height:100%;
+    width: 50%;
+}
+
+img {
+    height: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Tabelka z poziomymi liniami */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+/* Dostosowanie do okna */
+@media (max-width: 1000px) {
+    section {
+        flex-direction: column;
+    }
+    article {
+        width: 100%;
+    }
+}
+
+
