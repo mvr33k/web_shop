@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(71, 71, 116);
+}
+
+#logo {
+  width: 10%;
+  height: 6%;
+  border-radius: 25px;
+}
+
+#text1 {
+  font-size: 1.2em;
+  flex-flow: row wrap;
+}
+
+body {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  color: rgb(77, 77, 77);
+  background: rgb(91, 96, 91);
+  background: linear-gradient(90deg, rgb(126, 206, 126) 0%, rgb(137, 255, 133) 35%, rgb(44, 255, 44) 100%);
+  font-size: large;
+}
+
+
+/* elementy strony glownej  */
+#sg{
+  display: none;
+}
+#header {
+  padding: 5%;
+  background-color: white;
+}
+#naglowek {
+  border: 10px solid transparent;
+  text-shadow: 2px 1px rgba(177, 211, 255, 0.548);
+  text-transform: uppercase;
+}
+#main {
+  margin: 0%;
+  padding: 3%;  
+  background-size: cover;
+}
+.btn {
+  background-color: rgb(80, 161, 59);
+  border-radius: 5%;
+  border: none;
+  color: rgb(240, 248, 255);
+  font-size: 16px;
+  padding: 5% 20%;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 .7rem 1.7rem var(--color-secondary-opacity);
+  transform: translateY(-3px);
+}
+.btn:hover {
+  background-color: rgb(41, 83, 30);
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+.btn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btn:hover span {
+  padding-right: 25px;
+}
+.btn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.services {
+  padding: 0 20%;
+}
+.card {
+  background-color: white;
+  border-radius: 5%;
+  color: white;
+  height: auto;
+  text-align: center;
+  padding: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+
+}
+.icon {
+  border-radius: 50%;
+  border: 2px solid rgb(57, 167, 30);
+  width: 40%;
+  padding: 2%;
+}
+.service-name {
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+
+}
+
+
+/*  elementy produktow */
+#prod{
+  display: '';
+}
+#prod-container {
+  padding: 5%;
+  background-color: white;
+  width:90%;
+  margin-left:5%;
+  border-radius:3%;
+}
+#sorting-menu{
+  float:left;
+  border: none;
+}
+input{
+  float: left;
+}
+.kategoria{
+  font-size: medium;
+  float: left;
+  padding-left: 5px;
+  margin-top: -4px;
+}
+.btn-prod {
+  background-color: rgb(80, 161, 59);
+  border-radius: 4%;
+  border: none;
+  color: rgb(240, 248, 255);
+  font-size: 16px;
+  padding: 2% 3%;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 .7rem 1.7rem var(--color-secondary-opacity);
+  transform: translateY(-3px);
+}
+.btn-prod:hover {
+  background-color: rgb(41, 83, 30);
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+.btn-prod span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.btn-prod span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.btn-prod:hover span {
+  padding-right: 25px;
+}
+.btn-prod:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* elementy kontaktow */
+#cont{
+  display: none;
+}
+
+@media only screen and (min-width) {
+  #menu {
+    height: 100px;
+    display: flex;
+    flex-flow: row wrap;
+
+  }
+}
+
+.menu-element {
+  margin: 0.5%;
+  padding: 1% 5%;
+  font-size: 1em;
+  background-color: rgb(80, 161, 59);
+  border-radius: 2%;
+  border: none;
+  color: aliceblue;
+  text-transform: uppercase;
+  transition: all 0.5s;
+  cursor: pointer;
+  min-width: 25%;
+
+}
+.menu-element:hover {
+  background-color: rgb(47, 99, 34);
+  transition: background-color 0.2s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0 .7rem 1.7rem var(--color-secondary-opacity);
+  transform: translateY(-3px);
+
+}
+.menu-element span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.menu-element span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.menu-element:hover span {
+  padding-right: 25px;
+}
+.menu-element:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+
+
+/* RWD */
+
+@media all and (min-width: 576px) {}
+
+@media all and (min-width: 780px) {}
+
+@media all and (min-width: 992px) {
+
+  .services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+  }
+
+}
+
+@media all and (min-width: 1200px) {}
