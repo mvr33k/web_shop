@@ -176,6 +176,9 @@ input{
   opacity: 1;
   right: 0;
 }
+#basket{
+  float: right
+}
 
 /* elementy kontaktow */
 #cont{

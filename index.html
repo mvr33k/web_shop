@@ -70,67 +70,128 @@
             <!-- opcja dodaj do koszyka -->
             <div id="prod-container">
                 <div id="sorting-menu">
+                    <div>
+                    <label>Ilość produktów na stronie:   </label>
+                    <select>
+                        <option>4</option>
+                        <option>8</option>
+                        <option>12</option>
+                    </select>
+                    </div><br>
                     <label>Kategorie</label><br><br>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    <label class="kategoria" for="vehicle1">Ubrania</label><br><br>
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                    <label class="kategoria" for="vehicle2">Kurtki</label><br><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label class="kategoria" for="vehicle3">Obuwie</label><br><br>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                    <label class="kategoria" for="vehicle3">Akcesoria</label><br>
+                    <input type="checkbox" id="kat-ubrania" name="kat-ubrania" value="Ubrania">
+                    <label class="kategoria" for="kat-ubrania">Ubrania</label><br><br>
+                    <input type="checkbox" id="kat-kurtki" name="kat-kurtki" value="Kurtki">
+                    <label class="kategoria" for="kat-kurtki">Kurtki</label><br><br>
+                    <input type="checkbox" id="kat-obuwie" name="kat-obuwie" value="Obuwie">
+                    <label class="kategoria" for="kat-obuwie">Obuwie</label><br><br>
+                    <input type="checkbox" id="kat-akcesoria" name="kat-akcesoria" value="Akcesoria">
+                    <label class="kategoria" for="kat-akcesoria">Akcesoria</label><br><br>
+                    <input type="submit" value="Submit"><br><br>
+                </div>
+                <div id="basket">
+                    Produkty w koszyku:
+                    
                 </div>
 
                 <div class="services">
                     <div class="services-container">
                         <div class="card card-one">
                             <img class="icon" src="ikony/tshirt.png">
-                            <p class="service-name">Ubrania</p>
+                            <p class="service-name">Koszulka 1</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
                         <div class="card card-two">
                             <img class="icon" src="ikony/jacket.png">
-                            <p class="service-name">Kurtki</p>
+                            <p class="service-name">Kurtka 1</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
                         <div class="card card-three">
                             <img class="icon" src="ikony/shoes.png">
-                            <p class="service-name">Obuwie</p>
+                            <p class="service-name">Buty 1</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
                         <div class="card card-four">
                             <img class="icon" src="ikony/hat.png">
-                            <p class="service-name">Akcesoria</p>
+                            <p class="service-name">Akcesoria 1</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
-                        <!-- <div class="card card-one">
+                        <div class="card card-one">
                             <img class="icon" src="ikony/tshirt.png">
-                            <p class="service-name">Ubrania</p>
+                            <p class="service-name">Koszulka 2</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
                         <div class="card card-two">
                             <img class="icon" src="ikony/jacket.png">
-                            <p class="service-name">Kurtki</p>
+                            <p class="service-name">Kurtka 2</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
                         <div class="card card-three">
                             <img class="icon" src="ikony/shoes.png">
-                            <p class="service-name">Obuwie</p>
+                            <p class="service-name">Buty 2</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
                         <div class="card card-four">
                             <img class="icon" src="ikony/hat.png">
-                            <p class="service-name">Akcesoria</p>
+                            <p class="service-name">Akcesoria 2</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
-                        </div> -->
+                        </div>
+                        <div class="card card-one">
+                            <img class="icon" src="ikony/tshirt.png">
+                            <p class="service-name">Koszulka 3</p>
+                            <br>
+                            <button class="btn-prod"><span>Do koszyka</span></button>
+                        </div>
+                        <div class="card card-two">
+                            <img class="icon" src="ikony/jacket.png">
+                            <p class="service-name">Kurtka 3</p>
+                            <br>
+                            <button class="btn-prod"><span>Do koszyka</span></button>
+                        </div>
+                        <div class="card card-three">
+                            <img class="icon" src="ikony/shoes.png">
+                            <p class="service-name">Buty 3</p>
+                            <br>
+                            <button class="btn-prod"><span>Do koszyka</span></button>
+                        </div>
+                        <div class="card card-four">
+                            <img class="icon" src="ikony/hat.png">
+                            <p class="service-name">Akcesoria 3</p>
+                            <br>
+                            <button class="btn-prod"><span>Do koszyka</span></button>
+                        </div>
+                        <div class="card card-one">
+                            <img class="icon" src="ikony/tshirt.png">
+                            <p class="service-name">Koszulka 4</p>
+                            <br>
+                            <button class="btn-prod"><span>Do koszyka</span></button>
+                        </div>
+                        <div class="card card-two">
+                            <img class="icon" src="ikony/jacket.png">
+                            <p class="service-name">Kurtka 4</p>
+                            <br>
+                            <button class="btn-prod"><span>Do koszyka</span></button>
+                        </div>
+                        <div class="card card-three">
+                            <img class="icon" src="ikony/shoes.png">
+                            <p class="service-name">Buty 4</p>
+                            <br>
+                            <button class="btn-prod"><span>Do koszyka</span></button>
+                        </div>
+                        <div class="card card-four">
+                            <img class="icon" src="ikony/hat.png">
+                            <p class="service-name">Akcesoria 4</p>
+                            <br>
+                            <button class="btn-prod"><span>Do koszyka</span></button>
+                        </div>
                     </div>
                 </div>
             </div>
