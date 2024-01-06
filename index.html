@@ -64,10 +64,10 @@
             </div>
         </div>
         <div id="prod">
-            <!-- ile produktow na stronie 4/8/12 -->
-            <!-- numer strony (fakeowy) -->
-            <!-- kategorie produktow -->
-            <!-- opcja dodaj do koszyka -->
+            <!-- ile produktow na stronie 4/8/12 - dodaj logikę -->
+            <!-- "pokaż więcej" zeby odsłonić więcej produktów -->
+            <!-- kategorie produktow - dodaj logike -->
+            <!-- opcja dodaj do koszyka - done -->
             <div id="prod-container">
                 <div id="sorting-menu">
                     <div>
@@ -90,109 +90,108 @@
                     <input type="submit" value="Submit"><br><br>
                 </div>
                 <div id="basket">
-                    <p>Ile produktów w koszyku:</p> <br>
+                    <p>Ilość produktów w koszyku:</p> <br>
                     <p id="basket-counter">0</p>
                 </div>
 
                 <div class="services">
                     <div class="services-container">
-                        <div class="card card-one">
+                        <div class="card card-one" data-categories="Ubrania">
                             <img class="icon" src="ikony/tshirt.png">
                             <p class="service-name">Koszulka 1</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
-                        <div class="card card-two">
+                        <div class="card card-two" data-categories="Kurtki">
                             <img class="icon" src="ikony/jacket.png">
                             <p class="service-name">Kurtka 1</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
-                        <div class="card card-three">
+                        <div class="card card-three" data-categories="Obuwie">
                             <img class="icon" src="ikony/shoes.png">
                             <p class="service-name">Buty 1</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
-                        <div class="card card-four">
+                        <div class="card card-four" data-categories="Akcesoria">
                             <img class="icon" src="ikony/hat.png">
                             <p class="service-name">Akcesoria 1</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
-                        <div class="card card-one">
+                        <div class="card card-one" data-categories="Ubrania">
                             <img class="icon" src="ikony/tshirt.png">
                             <p class="service-name">Koszulka 2</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
-                        <div class="card card-two">
+                        <div class="card card-two" data-categories="Kurtki">
                             <img class="icon" src="ikony/jacket.png">
                             <p class="service-name">Kurtka 2</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
-                        <div class="card card-three">
+                        <div class="card card-three" data-categories="Obuwie">
                             <img class="icon" src="ikony/shoes.png">
                             <p class="service-name">Buty 2</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
-                        <div class="card card-four">
+                        <div class="card card-four" data-categories="Akcesoria">
                             <img class="icon" src="ikony/hat.png">
                             <p class="service-name">Akcesoria 2</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
-                        <!-- <div class="card card-one">
+                        <!-- <div class="card card-one" data-categories="Ubrania">
                             <img class="icon" src="ikony/tshirt.png">
                             <p class="service-name">Koszulka 3</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
-                        <div class="card card-two">
+                        <div class="card card-two" data-categories="Kurtki">
                             <img class="icon" src="ikony/jacket.png">
                             <p class="service-name">Kurtka 3</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
-                        <div class="card card-three">
+                        <div class="card card-three" data-categories="Obuwie">
                             <img class="icon" src="ikony/shoes.png">
                             <p class="service-name">Buty 3</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
-                        <div class="card card-four">
+                        <div class="card card-four" data-categories="Akcesoria">
                             <img class="icon" src="ikony/hat.png">
                             <p class="service-name">Akcesoria 3</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
-                        <div class="card card-one">
+                        <div class="card card-one" data-categories="Ubrania">
                             <img class="icon" src="ikony/tshirt.png">
                             <p class="service-name">Koszulka 4</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
-                        <div class="card card-two">
+                        <div class="card card-two" data-categories="Kurtki">
                             <img class="icon" src="ikony/jacket.png">
                             <p class="service-name">Kurtka 4</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
-                        <div class="card card-three">
+                        <div class="card card-three" data-categories="Obuwie">
                             <img class="icon" src="ikony/shoes.png">
                             <p class="service-name">Buty 4</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div>
-                        <div class="card card-four">
+                        <div class="card card-four" data-categories="Akcesoria">
                             <img class="icon" src="ikony/hat.png">
                             <p class="service-name">Akcesoria 4</p>
                             <br>
                             <button class="btn-prod"><span>Do koszyka</span></button>
                         </div> -->
-
                     </div>
                 </div>
             </div>

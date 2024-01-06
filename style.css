@@ -98,6 +98,7 @@ body {
   padding: 1em;
   margin-right: 1em;
   margin-top: 1em;
+  display: block;
 
 }
 .icon {
@@ -112,7 +113,11 @@ body {
   font-weight: bold;
 
 }
-
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
 
 /*  elementy produktow */
 #prod{
@@ -178,6 +183,14 @@ input{
 }
 #basket{
   float: right
+}
+#basket-counter {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 8px 12px; 
+  border-radius: 50%; 
+  font-size: 16px; 
+  display: inline-block; 
 }
 
 /* elementy kontaktow */

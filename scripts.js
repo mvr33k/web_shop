@@ -16,17 +16,19 @@ window.onload = function () {
     };
 
 
-    var buttons = document.getElementsByClassName('btn-prod');
+    var buttonsProd = document.getElementsByClassName('btn-prod');
 
-    for (var i = 0; i < buttons.length; i++) {
-        buttons[i].addEventListener('click', function () {
-            // Update the content of the element with id 'basket-counter'
+    for (var i = 0; i < buttonsProd.length; i++) {
+        buttonsProd[i].addEventListener('click', function () {
             var element = document.getElementById('basket-counter');
-            // Get the current count, convert it to a number, increment by 1, and update the content
             var count = parseInt(element.innerHTML, 10);
             element.innerHTML = count + 1;
         });
     }
+
+    
+
+    
 }
 
 
