@@ -26,6 +26,59 @@ window.onload = function () {
         });
     }
 
+
+    function sortProducts() {
+        // wybór ilości produktów
+        const productsPerPage = parseInt(form.querySelector('select').value, 10);
+
+        // wybór kategorii
+        const selectedCategories = [];
+        document.querySelectorAll('input[type="checkbox"]:checked').forEach((checkbox) => {
+            selectedCategories.push(checkbox.value);
+        });
+
+        // pokazuje produkty zależnie od wybranych kategorii i ilości
+        let visibleCount = 0;
+        document.querySelectorAll('.card').forEach((card) => {
+            const cardCategory = card.getAttribute('data-category');
+            const isVisible = selectedCategories.includes(cardCategory) || selectedCategories.length === 0;
+
+            if (isVisible) {
+                if (visibleCount < productsPerPage) {
+                    card.style.display = 'block';
+                    visibleCount++;
+                } else {
+                    card.style.display = 'none';
+                }
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+    
+    // obsługa formularza
+    const form = document.getElementById('sorting-menu');
+    if (form) {
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // nie cofa wyboru
+            sortProducts();
+        });
+    }
+
+    // Funkcja obsługująca kliknięcie w kategorię na stronie głównej
+    function handleCategoryButtonClick() {
+        const category = this.parentElement.querySelector('.service-name').innerText;
+
+        // Przekierowanie do sekcji Produktów
+        document.getElementById('prod-button').click();
+    }
+    // Dodanie event listenera do przycisków kategorii na stronie głównej
+    const categoryButtons = document.querySelectorAll('.card-main .btn');
+    if (categoryButtons) {
+        categoryButtons.forEach((button) => {
+            button.addEventListener('click', handleCategoryButtonClick);
+        });
+    }
     
 
     

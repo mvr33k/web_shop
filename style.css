@@ -89,7 +89,7 @@ body {
 .services {
   padding: 0 20%;
 }
-.card {
+.card-main {
   background-color: white;
   border-radius: 5%;
   color: white;
@@ -120,6 +120,18 @@ body {
 }
 
 /*  elementy produktow */
+.card {
+  background-color: white;
+  border-radius: 5%;
+  color: white;
+  height: auto;
+  text-align: center;
+  padding: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+  display: block;
+
+}
 #prod{
   display: '';
 }
