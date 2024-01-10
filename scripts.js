@@ -1,4 +1,6 @@
 window.onload = function () {
+
+    // podstawowa zmiana okienek 
     document.getElementById('sg-button').onclick = function () {
         document.getElementById('prod').style.display = 'none';
         document.getElementById('cont').style.display = 'none';
@@ -16,6 +18,7 @@ window.onload = function () {
     };
 
 
+    // ilosc produktow w koszyku
     var buttonsProd = document.getElementsByClassName('btn-prod');
 
     for (var i = 0; i < buttonsProd.length; i++) {
@@ -65,23 +68,15 @@ window.onload = function () {
         });
     }
 
-    // Funkcja obsługująca kliknięcie w kategorię na stronie głównej
-    function handleCategoryButtonClick() {
-        const category = this.parentElement.querySelector('.service-name').innerText;
-
-        // Przekierowanie do sekcji Produktów
-        document.getElementById('prod-button').click();
-    }
-    // Dodanie event listenera do przycisków kategorii na stronie głównej
-    const categoryButtons = document.querySelectorAll('.card-main .btn');
-    if (categoryButtons) {
+    // kategorie na sg. nie udało mi się niestety zrobić sortowania buttonami z sg na prod
+    const categoryButtons = document.querySelectorAll('.btn'); // dla wszystkich guzikow z klasy .btn
+    if (categoryButtons) { //jesli klikniety
         categoryButtons.forEach((button) => {
-            button.addEventListener('click', handleCategoryButtonClick);
+            button.addEventListener('click', function () {
+                document.getElementById('prod-button').click(); // zrob to co robi prod button
+            });
         });
     }
-    
-
-    
 }
 
 
